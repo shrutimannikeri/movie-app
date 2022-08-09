@@ -1,0 +1,125 @@
+body {
+  
+    background-color: #212426;
+}
+.app {
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+div#movielist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.movie {
+    gap: 10px;
+    width: 228px;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 17px;
+    box-shadow: 0 0 2px 2px #110f0f80;
+    margin: 1em 0;
+    position: relative;
+}
+
+img.imgMovie {
+    width: 100%;
+    height: 288px;
+}
+.movie h3 {
+    padding-left: 8px;
+    font-size: 12px;
+    color: #f9d3b4;
+}
+
+.movie p,.movie span {
+    padding-left: 8px;
+    margin-bottom: 2px;
+    line-height: 3;
+}
+.search {
+    width: 71%;
+    margin: 4rem 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1.75rem;
+    border-radius: 3rem;
+    background: #1f2123;
+    box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+}
+
+.movie div:nth-of-type(1) {
+    position: absolute;
+    padding: 16px;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    color: #f9d3b4;
+}
+
+input#searchMoview {
+    flex: 1 1;
+    border: none;
+    font-size: 1.5rem;
+    font-family: var(--font-raleway);
+    font-weight: 500;
+    padding-right: 1rem;
+    outline: none;
+    color: #a1a1a1;
+    background: #1f2123;
+    font-size: 14px;
+}
+button#searchbtn {
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #f9d3b4;
+}
+h1.title {
+    font-size: 3rem;
+    letter-spacing: 0.9px;
+    background: linear-gradient(
+    90deg,
+    rgba(249, 211, 180, 1) 0%,
+    rgba(249, 211, 180, 0) 100%
+  );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+a.page-link {
+    background: #0b0b0d;
+    border: none;
+    color: #ffff;
+}
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #1d3753;
+    border-color: none;
+}
+nav {
+    margin-top: 3em;
+}
+.page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #ffffff30;
+    border-color: #dee2e6;
+}
+.page-link:hover {
+    background: #000;
+    color: #fff;
+    transition: 0.2s;
+    transform: skewX(10deg);
+}
